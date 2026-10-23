@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vínculos · Herramientas para momentos difíciles</title>
+  <meta name="description" content="Vínculos: guías y herramientas de primeros auxilios emocionales para quien atraviesa una crisis y para quien acompaña, con líneas de ayuda de Colombia.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+  <div id="floaters" aria-hidden="true"></div>
+
+  <!-- Barra de accesibilidad -->
+  <div class="a11y-bar" role="region" aria-label="Opciones de accesibilidad">
+    <span class="a11y-title">♿ Accesibilidad</span>
+    <button type="button" id="font-minus" aria-label="Reducir tamaño de letra">A−</button>
+    <button type="button" id="font-plus" aria-label="Aumentar tamaño de letra">A+</button>
+    <button type="button" id="contrast-toggle" aria-pressed="false">Alto contraste</button>
+    <button type="button" id="read-toggle" aria-pressed="false">🔊 Lectura por voz</button>
+    <button type="button" id="motion-toggle" aria-pressed="false">Menos movimiento</button>
+  </div>
+
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Vínculos, inicio">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="18" cy="24" r="12" fill="none" stroke="#e57fa5" stroke-width="4"/>
+          <circle cx="30" cy="24" r="12" fill="none" stroke="#b9a2e8" stroke-width="4"/>
+        </svg>
+        <span>
+          <strong>Vínculos</strong>
+          <small>Nadie tiene que atravesar esto a solas.</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="menu">☰ Menú</button>
+
+      <nav id="menu" class="main-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#ahora">¿Qué necesito ahora?</a></li>
+          <li><a href="#para-mi">Para mí</a></li>
+          <li><a href="#acompanar">Para acompañar</a></li>
+          <li><a href="#lineas">Líneas de ayuda</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn btn-emergency" id="open-crisis" aria-haspopup="dialog">
+        🚨 Necesito Ayuda Inmediata <span class="sub">Líneas de crisis 24/7 en Colombia</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">✿ Primeros auxilios emocionales</p>
+          <h1>Respira. Estás aquí, y no tienes que poder con todo hoy.</h1>
+          <p class="lead">
+            Reunimos guías y herramientas sencillas para atravesar un momento de crisis desde casa o para acompañar
+            con cuidado a alguien cercano. No reemplazan la ayuda profesional: te sostienen mientras llega.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#ahora">💗 Estoy pasando un mal momento</a>
+            <a class="btn btn-secondary" href="#acompanar">🤝 Quiero ayudar a alguien</a>
+          </div>
+          <p class="hero-note">Sin registros. Lo que escribas aquí se queda solo en tu dispositivo.</p>
+        </div>
+
+        <!-- Ilustración original (SVG): manos sosteniendo un corazón -->
+        <div class="hero-art" role="img" aria-label="Ilustración de dos manos sosteniendo con cuidado un corazón rosado, rodeadas de estrellas y nubes">
+          <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="g-bg" cx="50%" cy="45%" r="60%">
+                <stop offset="0" stop-color="#ffe3ee"/><stop offset="1" stop-color="#f3e6ff"/>
+              </radialGradient>
+              <linearGradient id="g-heart" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff9fc0"/><stop offset="1" stop-color="#e5668f"/>
+              </linearGradient>
+              <linearGradient id="g-hand" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffe0cf"/><stop offset="1" stop-color="#f7c3ad"/>
+              </linearGradient>
+            </defs>
+            <circle cx="210" cy="210" r="196" fill="url(#g-bg)"/>
+            <g class="cloud c1"><ellipse cx="85" cy="105" rx="42" ry="16" fill="#fff" opacity=".9"/><ellipse cx="108" cy="94" rx="26" ry="16" fill="#fff" opacity=".9"/><ellipse cx="66" cy="98" rx="20" ry="12" fill="#fff" opacity=".9"/></g>
+            <g class="cloud c2"><ellipse cx="335" cy="150" rx="36" ry="13" fill="#fff" opacity=".85"/><ellipse cx="352" cy="140" rx="22" ry="14" fill="#fff" opacity=".85"/></g>
+            <g fill="#fff3a8">
+              <path class="twinkle t1" d="M330 70l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"/>
+              <path class="twinkle t2" d="M70 220l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+              <path class="twinkle t3" d="M355 270l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/>
+            </g>
+            <!-- brazos -->
+            <path d="M52 330 C90 290 130 280 168 282 L196 300 L190 340 L60 352 Z" fill="url(#g-hand)"/>
+            <path d="M368 330 C330 290 290 280 252 282 L224 300 L230 340 L360 352 Z" fill="url(#g-hand)"/>
+            <!-- mangas -->
+            <path d="M20 318 C40 300 62 292 84 298 L96 354 L24 360 Z" fill="#c9b6f0"/>
+            <path d="M400 318 C380 300 358 292 336 298 L324 354 L396 360 Z" fill="#b6d9f2"/>
+            <!-- palmas -->
+            <path d="M110 292 C140 262 188 262 214 282 C222 292 214 306 196 306 L118 316 Z" fill="url(#g-hand)"/>
+            <path d="M310 292 C280 262 232 262 206 282 C198 292 206 306 224 306 L302 316 Z" fill="url(#g-hand)"/>
+            <!-- corazón -->
+            <g class="heartbeat">
+              <path d="M210 262 C150 214 128 178 146 148 C162 122 198 126 210 154 C222 126 258 122 274 148 C292 178 270 214 210 262 Z" fill="url(#g-heart)"/>
+              <path d="M168 150 C176 140 190 140 196 148" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".7"/>
+            </g>
+            <g fill="#ff9fc0" opacity=".9">
+              <path class="rise r1" d="M118 120c-6-8-18-2-12 8 4 6 12 10 12 10s8-4 12-10c6-10-6-16-12-8z"/>
+              <path class="rise r2" d="M300 100c-5-7-15-2-10 6 3 5 10 8 10 8s7-3 10-8c5-8-5-13-10-6z"/>
+              <path class="rise r3" d="M250 70c-4-6-12-1-8 5 2 4 8 7 8 7s6-3 8-7c4-6-4-11-8-5z"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C240 90 480 0 720 40 C960 80 1200 10 1440 40 L1440 80 L0 80Z" fill="var(--bg)"/></svg>
+    </section>
+
+    <!-- ¿ES UNA EMERGENCIA? -->
+    <section id="ahora" class="section">
+      <div class="container">
+        <h2>🧭 ¿Qué necesito ahora mismo?</h2>
+        <p class="section-intro">Responde con calma. Te orientamos hacia el paso más seguro. Nada de lo que marques se guarda ni se envía.</p>
+        <div class="triage card" id="triage" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- HERRAMIENTAS PARA MÍ -->
+    <section id="para-mi" class="section alt">
+      <div class="container">
+        <h2>💗 Herramientas para mí</h2>
+        <p class="section-intro">Ejercicios breves para hacer en casa. Elige cómo te sientes y te sugerimos por dónde empezar.</p>
+
+        <div class="mood" role="group" aria-label="¿Cómo te sientes ahora?">
+          <p class="mood-title">¿Cómo te sientes en este momento?</p>
+          <div class="mood-options">
+            <button class="mood-btn" data-mood="panico"><span>😰</span>Ansiedad o pánico</button>
+            <button class="mood-btn" data-mood="duelo"><span>😢</span>Tristeza o duelo</button>
+            <button class="mood-btn" data-mood="rabia"><span>😤</span>Rabia o desborde</button>
+            <button class="mood-btn" data-mood="vacio"><span>😶</span>Vacío o cansancio</button>
+            <button class="mood-btn" data-mood="solo"><span>🫂</span>Soledad</button>
+          </div>
+          <div class="mood-result card" id="mood-result" hidden></div>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="Herramientas de autocuidado">
+          <button role="tab" id="tab-respirar" aria-controls="panel-respirar" aria-selected="true">🌬️ Respirar</button>
+          <button role="tab" id="tab-anclaje" aria-controls="panel-anclaje" aria-selected="false" tabindex="-1">🌿 Anclaje 5-4-3-2-1</button>
+          <button role="tab" id="tab-cuerpo" aria-controls="panel-cuerpo" aria-selected="false" tabindex="-1">🧘 Soltar el cuerpo</button>
+          <button role="tab" id="tab-frases" aria-controls="panel-frases" aria-selected="false" tabindex="-1">🌸 Frases de contención</button>
+          <button role="tab" id="tab-plan" aria-controls="panel-plan" aria-selected="false" tabindex="-1">🛡️ Mi plan de seguridad</button>
+        </div>
+
+        <!-- Respirar -->
+        <div class="tab-panel card" role="tabpanel" id="panel-respirar" aria-labelledby="tab-respirar">
+          <div class="two-col">
+            <div>
+              <h3>Respiración guiada</h3>
+              <p>Alargar la exhalación ayuda al cuerpo a bajar la alarma. Sigue el círculo; no hay forma incorrecta de hacerlo.</p>
+              <div class="chips" role="group" aria-label="Ritmo de respiración">
+                <button class="chip active" data-pattern="446" aria-pressed="true">Inhalo 4 · Sostengo 4 · Exhalo 6</button>
+                <button class="chip" data-pattern="46" aria-pressed="false">Inhalo 4 · Exhalo 6 (sin pausa)</button>
+              </div>
+              <p class="small">Si te mareas, respira normal unos instantes y retoma más suave.</p>
+              <div class="controls">
+                <button class="btn btn-primary" id="breath-start">▶ Iniciar</button>
+                <span class="counter" aria-live="polite">Ciclos: <strong id="breath-count">0</strong></span>
+              </div>
+            </div>
+            <div class="breath-stage">
+              <div class="breath-circle" id="breath-circle"><span id="breath-word">Listo</span></div>
+              <p class="breath-text" id="breath-text" aria-live="polite">Pulsa «Iniciar» cuando quieras.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Anclaje -->
+        <div class="tab-panel card" role="tabpanel" id="panel-anclaje" aria-labelledby="tab-anclaje" hidden>
+          <h3>Anclaje 5-4-3-2-1</h3>
+          <p>Para volver al presente cuando la mente va muy rápido. Toca <strong>+</strong> cada vez que encuentres algo.</p>
+          <div id="grounding"></div>
+        </div>
+
+        <!-- Cuerpo -->
+        <div class="tab-panel card" role="tabpanel" id="panel-cuerpo" aria-labelledby="tab-cuerpo" hidden>
+          <h3>Soltar la tensión, paso a paso</h3>
+          <p>Tensa suavemente cada zona unos segundos y luego suéltala. Sin dolor: si algo molesta, omite ese paso.</p>
+          <div id="relax"></div>
+        </div>
+
+        <!-- Frases -->
+        <div class="tab-panel card" role="tabpanel" id="panel-frases" aria-labelledby="tab-frases" hidden>
+          <h3>Una palabra amable, ahora</h3>
+          <p>Toca la tarjeta para recibir una frase. Léela despacio, quizá en voz alta.</p>
+          <button class="phrase-card" id="phrase-card" aria-live="polite">
+            <span class="phrase-icon">✿</span>
+            <span id="phrase-text">Toca aquí</span>
+          </button>
+        </div>
+
+        <!-- Plan -->
+        <div class="tab-panel card" role="tabpanel" id="panel-plan" aria-labelledby="tab-plan" hidden>
+          <h3>Mi plan de seguridad</h3>
+          <p>Es mejor escribirlo en un momento de calma, para tenerlo a mano cuando haga falta. Se guarda solo en este dispositivo.</p>
+          <form id="plan-form" class="plan-form">
+            <label>Señales de que me estoy sintiendo peor
+              <textarea name="senales" rows="2" placeholder="Ej.: no puedo dormir, me aíslo, pienso cosas muy oscuras"></textarea></label>
+            <label>Cosas que me ayudan a calmarme
+              <textarea name="calma" rows="2" placeholder="Ej.: música, bañarme, salir a caminar, abrazar a mi mascota"></textarea></label>
+            <label>Personas de confianza (nombre y teléfono)
+              <textarea name="personas" rows="2" placeholder="Ej.: Ana – 300 000 0000"></textarea></label>
+            <label>Un lugar donde me siento más segura o seguro
+              <textarea name="lugar" rows="1"></textarea></label>
+            <label>Razones por las que quiero cuidarme
+              <textarea name="razones" rows="2"></textarea></label>
+            <label>Cómo dejaré mi entorno más seguro si lo necesito
+              <textarea name="entorno" rows="2" placeholder="Ej.: pedir a alguien que guarde ciertos objetos o medicamentos"></textarea></label>
+            <p class="small">Si en algún momento sientes que no puedes mantenerte a salvo, llama al <strong>123</strong> o a la <strong>línea 192, opción 4</strong>.</p>
+            <div class="controls">
+              <button type="submit" class="btn btn-primary">💾 Guardar en este dispositivo</button>
+              <button type="button" class="btn btn-secondary" id="plan-print">🖨️ Imprimir o guardar PDF</button>
+              <button type="button" class="btn btn-link" id="plan-clear">Borrar mi plan</button>
+            </div>
+            <p id="plan-msg" class="small" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARA ACOMPAÑAR -->
+    <section id="acompanar" class="section print-target-section">
+      <div class="container">
+        <h2>🤝 Para acompañar a alguien en crisis</h2>
+        <p class="section-intro">No necesitas ser profesional para ayudar. Estar presente, escuchar y conectar con ayuda ya marca una diferencia.</p>
+
+        <div class="helper-grid">
+          <article class="card">
+            <h3>✅ Qué hacer ahora</h3>
+            <p class="small">Marca cada paso a medida que lo cumplas.</p>
+            <ul class="checklist" id="helper-checklist"></ul>
+            <div class="progress" aria-hidden="true"><div id="helper-progress"></div></div>
+            <p class="small" id="helper-progress-text" role="status">0 de 6 pasos</p>
+          </article>
+
+          <article class="card">
+            <h3>🔄 Qué decir y qué evitar</h3>
+            <p class="small">Toca cada tarjeta para darle la vuelta.</p>
+            <div class="flip-grid" id="flip-grid"></div>
+          </article>
+        </div>
+
+        <article class="card mt">
+          <h3>💬 Frases que puedes usar</h3>
+          <div class="phrase-list" id="say-list"></div>
+        </article>
+
+        <article class="card mt">
+          <h3>👀 Señales de alerta a las que prestar atención</h3>
+          <div class="accordion">
+            <details><summary>En lo que dice</summary><p>Habla de no tener salida, de ser una carga, de querer desaparecer o de no querer seguir. Se despide de forma inusual o dice «ya no me van a ver más».</p></details>
+            <details><summary>En lo que hace</summary><p>Se aísla, deja de hacer lo que disfrutaba, regala objetos importantes, aumenta el consumo de alcohol o sustancias, o busca medios para hacerse daño.</p></details>
+            <details><summary>En su estado de ánimo</summary><p>Tristeza o desesperanza profundas, rabia intensa, ansiedad muy alta, cambios bruscos o, a veces, una calma repentina después de un periodo muy difícil.</p></details>
+          </div>
+        </article>
+
+        <article class="card callout mt">
+          <h3>⚠️ Si hay riesgo inmediato</h3>
+          <p>No la dejes sola. Llama al <a href="tel:123"><strong>123</strong></a>, aleja con calma los objetos con los que podría hacerse daño y permanece a su lado hasta que llegue ayuda. Si te preocupa su vida, preguntar de forma directa y respetuosa si piensa en quitársela <strong>no le da la idea</strong>: suele aliviar.</p>
+          <div class="controls">
+            <button class="btn btn-secondary" id="helper-print">🖨️ Imprimir o guardar esta guía en PDF</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- LÍNEAS -->
+    <section id="lineas" class="section alt">
+      <div class="container">
+        <h2>📞 Líneas de ayuda en Colombia</h2>
+        <p class="section-intro">Llamadas gratuitas. Si no estás seguro de cuál elegir, empieza por la 123 en una emergencia o por la 192, opción 4, para orientación en salud mental.</p>
+        <div class="line-grid" id="line-grid"></div>
+        <p class="small mt">Información revisada en octubre de 2026 con fuentes oficiales y de prensa. Los servicios pueden cambiar: confirma siempre en el sitio de la entidad.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Vínculos</h3>
+        <p>Guías y herramientas de primeros auxilios emocionales, pensadas con respeto, sin juicios y sin etiquetas.</p>
+      </div>
+      <div>
+        <h3>Privacidad</h3>
+        <p>No pedimos datos personales ni usamos cookies de seguimiento. Tu plan de seguridad y tus preferencias se guardan únicamente en tu navegador y puedes borrarlas cuando quieras.</p>
+      </div>
+      <div class="ethics-note">
+        <h3>Nota de responsabilidad ética</h3>
+        <p>Este sitio ofrece información y ejercicios de apoyo emocional. No presta atención psicológica, no diagnostica ni reemplaza la atención médica o psicológica profesional. Ante un riesgo para tu vida o la de otra persona, llama al 123.</p>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Vínculos · Hecho con cuidado ♡</p>
+  </footer>
+
+  <!-- MODAL CRISIS -->
+  <dialog id="crisis-modal" aria-labelledby="crisis-title">
+    <h2 id="crisis-title">Estás a tiempo. Pide ayuda ahora.</h2>
+    <p>Si estás en peligro o piensas en hacerte daño, llama. Las líneas son gratuitas y hay personas dispuestas a escucharte.</p>
+    <ul class="phone-list">
+      <li><a class="btn btn-emergency" href="tel:123">🚨 123 · Emergencias</a></li>
+      <li><a class="btn btn-primary" href="tel:192">💗 192, opción 4 · Salud mental (nacional)</a></li>
+      <li><a class="btn btn-secondary" href="tel:106">🫂 106 · Línea de escucha (Bogotá, Medellín, Cali)</a></li>
+    </ul>
+    <p class="small">Si puedes, avisa también a alguien cercano para que te acompañe mientras llamas.</p>
+    <button class="btn btn-link close-modal">Cerrar</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
